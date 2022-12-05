@@ -1,80 +1,65 @@
 <article class="bcls-article">
-    <h1>{{ page.title }}</h1>
-    <summary>{{ page.description }}</summary>
-    <section class="bcls-section">
-      <p>Lead forms can be used to capture viewer information during video playback. There are two types of lead forms:</p>
+    <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section">
+      <p>リードフォームは、ビデオの再生中に視聴者情報をキャプチャするために使用できます。リードフォームには次の2種類があります。</p>
       <ul>
-        <li><strong>Campaign lead forms</strong> - Allow you to select from a set of fields and the form data is saved locally in Video Cloud. These forms are used  with players that are configured with Campaign Tracking.</li>
-        <li><strong>Custom lead forms</strong> - Allow you to enter custom form HTML generated from a marketing automation platform. These forms are used  with players that are configured with a connection to a marketing automation platform.</li>
+        <li><strong>キャンペーンのリードフォーム</strong>- フィールドのセットから選択することができ、フォーム データは Video Cloud にローカルに保存されます。これらのフォームは、キャンペーントラッキングが設定されているプレーヤーで使用されます。</li>
+        <li><strong>カスタム リードフォーム</strong>- マーケティング オートメーション プラットフォームから生成されたカスタム フォーム HTML を入力できます。これらのフォームは、マーケティング自動化プラットフォームに接続するように設定されたプレーヤーで使用されます。</li>
       </ul>
-      <p>For more information on creating custom lead forms with a marketing automation platform, see the document for your platform:</p>
+      <p>マーケティング自動化プラットフォームを使用したカスタムリードフォームの作成の詳細については、ご使用のプラットフォームのドキュメントを参照してください。</p>
       <ul>
-        <li><a href="/campaign/integrations/eloqua/creating-custom-lead-forms-oracle-eloqua.html">Oracle Eloqua</a></li>
+        <li><a href="/campaign/integrations/eloqua/creating-custom-lead-forms-oracle-eloqua.html">オラクル・エロクア</a></li>
         <li><a href="/campaign/integrations/marketo/creating-custom-lead-forms-marketo.html">Marketo</a></li>
-        <li><a href="/campaign/integrations/hubspot/creating-custom-lead-forms-hubspot.html">HubSpot</a></li>
-        <li><a href="/campaign/integrations/salesforce/creating-custom-lead-forms-salesforce.html">Salesforce</a></li>
-      </ul>
-    </section>
-    <section class="bcls-section">
-      <h2 id="leadform">Creating a lead form</h2>
-      <p>To create a lead form, follow these steps.</p>
-      <h3>Configure the form contents</h3>
+        <li><a href="/campaign/integrations/hubspot/creating-custom-lead-forms-hubspot.html">HubSpot </a></li>
+        <li><a href="/campaign/integrations/salesforce/creating-custom-lead-forms-salesforce.html">セールスフォース</a></li>
+      </ul>  </section><section class="bcls-section">
+      <h2 id="leadform">リードフォームを作成する</h2>
+      <p>リードフォームを作成するには、次の手順を行います。</p>
+      <h3>フォームの内容を構成する</h3>
       <ol class="bcls-tasklist">
         <li>
-          <p>Open the <strong>Campaign</strong> module.</p>
+          <p>を開きます<strong>運動</strong>モジュール。</p>
         </li>
-        <li>In the left navigation, click <strong>Lead Forms</strong>. If any lead forms have been created, they will be displayed.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="manage lead forms section" src="/assets/images/s-campaign-img/general/node15860-manage-lead-forms.png" /></figure>
+        <li>左側のナビゲーションで、<strong>リードフォーム</strong>.リードフォームが作成されている場合、作成されたリードフォームが表示されます。  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="リードフォームの管理セクション" src="/assets/images/s-campaign-img/general/node15860-manage-lead-forms.png" /></figure>
         </li>
-        <li>Click <span class="button-blue">Create Lead Form</span>.</li>
-        <li>Give the lead form a descriptive <strong>Name</strong>.</li>
-        <li>Select a <strong>Lead Form Status</strong>.
+        <li>クリック<span class="button-blue">リードフォームを作成</span>.</li>
+        <li>リードフォームに説明を付ける<strong>名前</strong>.</li>
+        <li>を選択<strong>リードフォームのステータス</strong>.
           <ul>
-            <li><strong>Active</strong></li>
-            <li><strong>Inactive</strong></li>
+            <li><strong>アクティブ</strong></li>
+            <li><strong>非アクティブ</strong></li>
           </ul>
         </li>
-        <li>Select a <strong>Form Language</strong>.</li>
-        <li>Select the <strong>Form Timing</strong>. The form timing determines when the lead form will be displayed.</li>
-        <li>Check <strong>Require submission to watch video</strong> to require that the lead form be submitted to watch a video.</li>
-        <li>Checking <strong>Always show the lead form even if the lead is already known</strong> will always show the lead form even if the lead is already known. If not checked, the lead form is not displayed if the lead is known.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="edit lead form" src="/assets/images/s-campaign-img/general/node15860-edit-lead-form-1.png" /></figure>
+        <li>を選択<strong>フォーム言語</strong>.</li>
+        <li>を選択<strong>フォームのタイミング</strong>.フォームのタイミングで、リードフォームがいつ表示されるかが決まります。</li>
+        <li>小切手<strong>ビデオを視聴するには送信が必要です</strong>動画を視聴するためにリードフォームの送信を要求する。</li>
+        <li>チェック中<strong>リードがすでにわかっている場合でも、常にリード フォームを表示する</strong>リードがすでにわかっている場合でも、常にリード フォームが表示されます。チェックされていない場合、リードが既知の場合、リードフォームは表示されません。 <figure class="bcls-figure"><img class="bcls-image--no-border" alt="リードフォームを編集する" src="/assets/images/s-campaign-img/general/node15860-edit-lead-form-1.png" /></figure>
         </li>
-        <li>Select the form type.
+        <li>フォームのタイプを選択します。
           <ul>
-            <li><strong>Campaign Lead Form</strong> - Form is built using a default layout and set of fields, data is saved locally in Video Cloud</li>
-            <li><strong>Custom Lead Form</strong> - Provides the ability to enter custom HTML (typically from a marketing automation platform), data is saved in the marketing automation platform</li>
+            <li><strong>キャンペーン リード フォーム</strong>- フォームはデフォルトのレイアウトと一連のフィールドを使用して構築され、データは Video Cloud にローカルに保存されます</li>
+            <li><strong>カスタムリードフォーム</strong>- カスタム HTML (通常はマーケティング オートメーション プラットフォームから) を入力する機能を提供し、データはマーケティング オートメーション プラットフォームに保存されます。</li>
           </ul>
         </li>
-        <li>Enter a <strong>Top Message</strong>. The top message is what will be displayed at the top of the lead form.</li>
-        <li>Select the fields to display on the lead form. A maximum of 4 fields can be selected.</li>
-        <li>Enter the <strong>Privacy Policy Text</strong> and <strong>Privacy Policy URL</strong>. These fields are required to save the lead form.</li>
-        <li>Enter the button text to be used for the <strong>Cancel</strong> and <strong>Submit Button</strong>.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="edit lead form" src="/assets/images/s-campaign-img/general/node15860-edit-lead-form-2.png" /></figure>
+        <li>入力します<strong>トップメッセージ</strong>.トップメッセージは、リードフォームの一番上に表示されます。</li>
+        <li>リードフォームに表示するフィールドを選択します。最高4つのフィールドを選択できます。</li>
+        <li>入力します<strong>プライバシー ポリシーのテキスト</strong>と<strong>プライバシー ポリシー URL</strong> .これらのフィールドは、リードフォームの保存に必要です。</li>
+        <li>に使用するボタン テキストを入力します。<strong>キャンセル</strong>と<strong>送信ボタン</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="リードフォームを編集する" src="/assets/images/s-campaign-img/general/node15860-edit-lead-form-2.png" /></figure>
         </li>
-        <li><strong>(Optional)</strong> Click <span class="button-blue">Preview Form</span> to open a preview of the form. The preview dialog can be used to preview the form on mobile, tablet or desktop devices. Click <span class="button-blue-text-bordered">Close</span> when done.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="preview lead form" src="/assets/images/s-campaign-img/general/node15860-preview-lead-form.png" /></figure>
+        <li><strong>(オプション)</strong>クリック<span class="button-blue">プレビューフォーム</span>フォームのプレビューを開きます。プレビューダイアログを使用して、モバイルデバイス、タブレット、またはデスクトップで表示されるフォームをプレビューできます。クリック<span class="button-blue-text-bordered">近い</span>それが終わったら。 <figure class="bcls-figure"><img class="bcls-image--no-border" alt="リードフォームのプレビュー" src="/assets/images/s-campaign-img/general/node15860-preview-lead-form.png" /></figure>
         </li>
-        <li>Click <span class="button-blue">Save</span> to save the lead form.</li>
+        <li>クリック<span class="button-blue">保存</span>リードフォームを保存します。</li>
       </ol>
-      <p>The lead form can be edited by clicking <span class="button-blue">Edit</span> button.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="assign">Assigning a lead form to a player</h2>
-      <p>To assign a lead form to a player, follow these steps:</p>
+      <p>リードフォームは、<span class="button-blue">編集</span>ボタン。</p>  </section><section class="bcls-section">
+      <h2 id="assign">リードフォームをプレーヤーに割り当てる</h2>
+      <p>リードフォームをプレーヤーに割り当てるには、次の手順に従います。</p>
       <ol class="bcls-tasklist">
-        <li>In the left navigation, click <strong>Campaign Players</strong>.</li>
-        <li>Locate your player and use the <strong>Lead Form</strong> dropdown list to select the lead form. Players configured to use a MAP connection can only use custom lead forms. Players configured to use Campaign tracking can only use Campaign lead forms.</li>
+        <li>左側のナビゲーションで、<strong>キャンペーンプレイヤー</strong>.</li>
+        <li>プレーヤーを見つけて使用します<strong>リードフォーム</strong>プルダウン リストからリードフォームを選択します。MAP接続を使用するように設定されたプレーヤーは、カスタムリードフォームだけを使用できます。キャンペーン追跡を使用するように設定されたプレイヤーは、キャンペーンリードフォームのみを使用できます。</li>
       </ol>
-      <p>The setup is now complete and you are ready to capture lead information. When a video is published using a Campaign-enabled player, the lead form will appear according to the form timing settings.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="export">Exporting lead form data</h2>
-      <p>There are two options for exporting lead data both accessed from the left navigation menu:</p>
+      <p>これでセットアップは完了しました。リード情報を取得する準備ができました。キャンペーン対応プレーヤーを使用してビデオを公開すると、フォームのタイミング設定に従ってリードフォームが表示されます。</p>  </section><section class="bcls-section">
+      <h2 id="export">リードフォームデータのエクスポート</h2>
+      <p>リードデータをエクスポートするには、左側のナビゲーションメニューからアクセスする 2 つのオプションがあります。</p>
       <ul>
-        <li><strong>Export Campaign Data</strong> - Used to export lead data collected from Campaign-enabled Brightcove Players. For information, see <a href="/campaign/admin/exporting-campaign-data-campaign-module.html">Exporting Campaign Data from the Campaign Module</a>.</li>
-        <li><strong>Export Gallery Leads</strong> - Used to export lead data collected from Gallery experiences. For information, see <a href="https://gallery.support.brightcove.com/experiences/portal/exporting-gallery-lead-data.html">Exporting Gallery Lead Data</a>.</li>
-      </ul>
-    </section>
-  </article>
-  
+        <li><strong>キャンペーン データのエクスポート</strong>- キャンペーン対応の Brightcove Player から収集されたリード データをエクスポートするために使用されます。詳細については、を参照してください。<a href="/campaign/admin/exporting-campaign-data-campaign-module.html">キャンペーン モジュールからのキャンペーン データのエクスポート</a>.</li>
+        <li><strong>ギャラリー リードのエクスポート</strong>- ギャラリー エクスペリエンスから収集されたリード データをエクスポートするために使用されます。詳細については、を参照してください。<a href="https://gallery.support.brightcove.com/experiences/portal/exporting-gallery-lead-data.html">ギャラリー リード データのエクスポート</a>.</li>
+      </ul>   </section></article>

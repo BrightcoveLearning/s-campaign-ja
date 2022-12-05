@@ -1,43 +1,34 @@
 <article class="bcls-article">
-    <h1>{{ page.title }}</h1>
-    <summary>{{ page.description }}</summary>
-    <section class="bcls-section">
-      <p>Gallery lead form data is collected when a Gallery experience has been configured to use a lead form. For information on configuring a portal experience to collect lead data, see <a href="https://gallery.support.brightcove.com/experiences/portal/using-lead-form-portal-experience.html">Using a Lead Form with a Portal Experience</a>.</p>
-      <p>When exporting Gallery leads from the Campaign module, only data captured using Campaign lead forms will be exported. Lead data from custom lead forms will be stored in your marketing automation software.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: Only users with Administrator privileges will be able to download the lead data.</aside>
-    </section>
-    <section class="bcls-section">
-      <p>To export Gallery lead data, follow these steps.</p>
+    <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section">
+      <p>ギャラリーリードフォームデータは、ギャラリーエクスペリエンスがリードフォームを使用するように構成されている場合に収集されます。リード データを収集するためのポータル エクスペリエンスの構成については、次を参照してください。<a href="https://gallery.support.brightcove.com/experiences/portal/using-lead-form-portal-experience.html">ポータル エクスペリエンスでのリード フォームの使用</a>.</p>
+      <p>キャンペーンモジュールからギャラリーリードをエクスポートする場合、キャンペーンリードフォームを使用してキャプチャされたデータだけがエクスポートされます。カスタムリードフォームからのリードデータは、マーケティング自動化ソフトウェアに保存されます。</p> <aside class="bcls-aside bcls-aside--information">注:リードデータをダウンロードできるのは、管理者権限を持つユーザーのみです。</aside> </section> <section class="bcls-section">
+      <p>ギャラリーのリードデータをエクスポートするには、次の手順に従います。</p>
       <ol class="bcls-tasklist-restart">
-        <li>Open the <strong>Campaign</strong> module.</li>
-        <li>In the left navigation, click <strong>Export Gallery Leads</strong>.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/admin/node18585-export-gallery-leads.png" /></figure>
+        <li>を開きます<strong>運動</strong>モジュール。</li>
+        <li>左側のナビゲーションで、<strong>ギャラリー リードのエクスポート</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/admin/node18585-export-gallery-leads.png" /></figure>
         </li>
-        <li>Select a Gallery experience to export the leads from.</li>
-        <li>Enter a <strong>Start Date</strong> and <strong>End Date</strong> for the leads.</li>
-        <li>Select an export format, <strong>Comma-Separated Values</strong> or <strong>Excel</strong>.</li>
-        <li>Click <span class="button-blue">Export</span> to download the lead data.</li>
+        <li>リードをエクスポートするギャラリーエクスペリエンスを選択します。</li>
+        <li>入力します<strong>開始日</strong>と<strong>終了日</strong>リードのために。</li>
+        <li>エクスポート形式を選択し、<strong>コンマ区切り値</strong>また<strong>エクセル</strong>.</li>
+        <li>クリック<span class="button-blue">書き出す</span>リードデータをダウンロードします。</li>
       </ol>
-      <p>The following fields will be included in the exported file:</p>
+      <p>エクスポートされたファイルには、次のフィールドが含まれます。</p>
       <ul>
-        <li><strong>All possible lead form fields</strong>
+        <li><strong>可能なすべてのリードフォームフィールド</strong>
           <ul>
             <li>emailAddress</li>
-            <li>firstName</li>
+            <li>FirstName</li>
             <li>lastName</li>
-            <li>businessPhone</li>
-            <li>country</li>
-            <li>companyName</li>
-            <li>industry</li>
+            <li>BusinessPHone</li>
+            <li>国</li>
+            <li>会社名</li>
+            <li>業界</li>
           </ul>
         </li>
-        <li><strong>externalId</strong> - ID used to uniquely identify the viewer</li>
-        <li><strong>playerId</strong> - Player ID that displayed the lead form</li>
-        <li><strong>videoId</strong> - Video ID of video being watched when data was collected</li>
-        <li><strong>pageUrl</strong> - Page URL viewer was on when data was collected</li>
-        <li><strong>createdAt</strong> - date and time data was collected</li>
-        <li><strong>experience</strong> - Name of experience being displayed when data was collected</li>
-      </ul>
-    </section>
-  </article>
-  
+        <li><strong>外部 ID</strong> - 視聴者を一意に識別するための ID</li>
+        <li><strong>プレイヤーID</strong>・リードフォームを表示したプレイヤーID</li>
+        <li><strong>ビデオID</strong>・データ収集時に視聴していた動画の動画ID</li>
+        <li><strong>ページの URL</strong> - データが収集されたときにページ URL ビューアーがオンになっていました</li>
+        <li><strong>作成日時</strong>- データが収集された日時</li>
+        <li><strong>経験</strong>・データ収集時に表示されていた体験名</li>
+      </ul>   </section></article>

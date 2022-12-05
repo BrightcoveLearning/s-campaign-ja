@@ -1,184 +1,134 @@
 <article class="bcls-article">
-    <h1>{{ page.title }}</h1>
-    <summary>{{ page.description }}</summary>
-    <section class="bcls-section">
-      <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="4582289844001">&nbsp;</div>
-      <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
-      <p>The Campaign module is used to track video engagement data for videos that are viewed inside of a Campaign-enabled Brightcove Player. Viewing data is stored in Video Cloud and can optionally be synchronized to popular marketing automation platforms such as Eloqua, Marketo, HubSpot and Salesforce.</p>
-      <p>To access the Campaign module, login to Video Cloud and click <strong>Campaign</strong> in the primary navigation. The Campaign homepage displays video engagement data which provides insights into how long videos were watched, which videos were watched, and who watched them. This allows you to better engage and convert your audiences.</p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-campaign-ui.png" /></figure>
-      <p>The homepage provides the ability to:</p>
+    <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section">
+      <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="4582289844001">&nbsp;</div> <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+      <p>キャンペーンモジュールは、キャンペーン対応のBrightcovePlayerの内部で表示されるビデオのビデオエンゲージメントデータを追跡するために使用されます。閲覧データは Video Cloud に保存され、必要に応じて、Eloqua、Marketo、HubSpot、Salesforce などの一般的なマーケティング自動化プラットフォームと同期することができます。</p>
+      <p>キャンペーン モジュールにアクセスするには、Video Cloud にログインして、<strong>運動</strong>プライマリ ナビゲーションで。Campaignのホームページにはビデオエンゲージメントデータが表示されており、ビデオがどれだけ長く視聴されたのか、どのビデオが誰が視聴したのかを洞察することができる。これによって、視聴者のエンゲージメントとコンバージョンを改善できます。</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-campaign-ui.png" /></figure>
+      <p>ホームページでは以下ができます。</p>
       <ul>
-        <li><a href="#performance">View video performance</a></li>
-        <li><a href="#leads">View leads performance</a></li>
-        <li><a href="#status">View the Campaign module status</a></li>
+        <li><a href="#performance">ビデオのパフォーマンスを見る</a></li>
+        <li><a href="#leads">リードのパフォーマンスの表示</a></li>
+        <li><a href="#status">キャンペーンモジュールのステータスを表示します。</a></li>
       </ul>
-      <p>The Campaign module provides the ability to:</p>
+      <p>キャンペーンモジュールには、次の機能があります。</p>
       <ul>
-        <li><a href="#connections">Setup data connections</a></li>
-        <li><a href="#players">Create Campaign players</a></li>
-        <li><a href="#leadforms">Create and manage lead forms</a></li>
-        <li><a href="#email">Publish to Email </a></li>
-        <li><a href="#events">View player events</a></li>
-        <li><a href="#profiles">View viewer profiles</a></li>
-        <li><a href="#jobs">View synchronization activity</a></li>
-        <li><a href="#settings">Configure Campaign settings</a></li>
-        <li><a href="#export">Export Campaign data</a></li>
-        <li><a href="#gallery_leads">Export Gallery leads</a></li>
-        <li><a href="#manage">Manage viewer data</a></li>
+        <li><a href="#connections">データ接続のセットアップ</a></li>
+        <li><a href="#players">キャンペーンプレイヤーの作成</a></li>
+        <li><a href="#leadforms">リードフォームの作成と管理</a></li>
+        <li><a href="#email">Eメールに公開 </a></li>
+        <li><a href="#events">プレイヤーイベントを見る</a></li>
+        <li><a href="#profiles">ビューアープロファイルの表示</a></li>
+        <li><a href="#jobs">同期アクティビティの表示</a></li>
+        <li><a href="#settings">キャンペーン設定の構成</a></li>
+        <li><a href="#export">キャンペーンデータのエクスポート</a></li>
+        <li><a href="#gallery_leads">ギャラリーのリードをエクスポート</a></li>
+        <li><a href="#manage">ビューアデータを管理する</a></li>
+      </ul>  </section><section class="bcls-section">
+      <h2 id="performance">動画パフォーマンスを表示する</h2>
+      <p>ビデオパフォーマンスセクションでは、キャンペーン対応プレーヤーの内部で再生されたビデオの高レベルのビデオパフォーマンスを提供します。</p> <aside class="bcls-aside bcls-aside--information">注:キャンペーン分析システムは一般的なVideoCloud分析システムとは別のシステムであり、2つのデータの追跡方法は異なる。したがって、2つを比較すると、いくつかの指標に違いが表示されます。例えば、VideoCloud分析システムは、ビデオが開始されるとすぐにビューをカウントしますが、Campaign分析システムは、ビデオが開始されて10秒後になってようやくビューをカウントします。ですから、14人の視聴者がビデオを開始するが、そのうち6人が10秒前にビデオを停止すると、VideoCloudの分析では14の再生が表示され、Campaignモジュールでは8が表示される。</aside>
+      <p>を選択することから始めます<strong>期間</strong>チャートのために。以下のオプションが利用できます。</p>
+      <ul>
+        <li>7日</li>
+        <li>30日間</li>
+        <li>90日</li>
       </ul>
-    </section>
-    <section class="bcls-section">
-      <h2 id="performance">Viewing video performance</h2>
-      <p>The video performance section provides high level video performance for videos that were played inside of Campaign-enabled players.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: The Campaign analytics system is separate from the general Video Cloud analytics system, and the two track data differently. Therefore you will see differences in some metrics if you compare the two. For example, the Video Cloud analytics system counts views as soon as a video starts, while the Campaign analytics system does not count views until 10 seconds into the video. So if 14 viewers start the video, but 6 of them stop it before 10 seconds have played, Video Cloud analytics would show 14 views, while the Campaign module would show 8.</aside>
-      <p>Start by selecting a <strong>Time Period</strong> for the charts. The following options are available:</p>
+      <p>以下に基づいたグラフが表示されます。</p>
       <ul>
-        <li>7 Days</li>
-        <li>30 Days</li>
-        <li>90 Days</li>
-      </ul>
-      <p>The following charts are displayed:</p>
-      <ul>
-        <li><a href="#viewed">Most Viewed Videos</a></li>
-        <li><a href="#engage">Most Engaging Videos</a></li>
-        <li><a href="#trends">Viewer Trends</a></li>
+        <li><a href="#viewed">[視聴回数の多い動画]:</a></li>
+        <li><a href="#engage">最も魅力的な動画</a></li>
+        <li><a href="#trends">視聴者の傾向</a></li>
       </ul>
       <div id="viewed" class="BCL-subsection">
-        <h3>Most Viewed Videos</h3>
-        <p>The Most Viewed Videos chart displays the most viewed videos in Campaign-enabled players for the selected time period.</p>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-most-viewed.png" /></figure>
+        <h3>[視聴回数の多い動画]:</h3>
+        <p>[MostViewedVideos]チャートには、選択した期間のキャンペーン対応プレーヤーで最も多く表示されたビデオが表示されます。</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-most-viewed.png" /></figure>
       </div>
       <div id="engage" class="BCL-subsection">
-        <h3>Most Engaging Videos</h3>
-        <p>The Most Engaging Videos chart displays the most engaging videos in Campaign-enabled players for the selected time period. Engagement is the average percent watched. For details on how we calculate video engagement, watch the training video <a href="/analytics/calculating-video-engagement-score.html">Calculating Video Engagement Score</a>.</p>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-most-engaging.png" /></figure>
+        <h3>最も魅力的な動画</h3>
+        <p>[MostEngainingVideos]チャートには、選択した期間のキャンペーン対応プレーヤーで最も魅力的なビデオが表示されます。エンゲージメントとは、視聴された割合の平均です。ビデオ エンゲージメントの計算方法の詳細については、トレーニング ビデオをご覧ください。<a href="/analytics/calculating-video-engagement-score.html">ビデオ エンゲージメント スコアの計算</a>.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-most-engaging.png" /></figure>
       </div>
       <div id="trends" class="BCL-subsection">
-        <h3>Viewer Trends</h3>
-        <p>The Viewer Trends chart displays video views over time for the selected time period. Views from both known and anonymous viewers are displayed. Hovering over the graph will display the actual data points.</p>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-viewer-trends.png" /></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: When using a Marketo Munchkin connection, the Viewer Trends graph will only show data for Unknown Viewers. When using a Munchkin connection, user details are not collected. For more detailed user information, the Marketo REST connection should be used. For information, see <a href="/campaign/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">Integrating Video Cloud with Marketo Using the REST APIs</a>.</aside>
-      </div>
-    </section>
-    <section class="bcls-section">
-      <h2 id="leads">Viewing leads performance</h2>
-      <p>To view the leads information, click the <strong>Leads</strong> tab. Note that the Leads tab will only appear if your account has Campaign lead forms created. The leads performance section provides high level leads performance for videos that were played inside of Campaign-enabled players. Start by selecting a <strong>Time Period</strong> for the charts. The following options are available:</p>
+        <h3>視聴者の傾向</h3>
+        <p>[視聴者の傾向] グラフには、選択した期間におけるビデオの視聴回数が表示されます。既知の視聴者と匿名の視聴者の両方の視聴が表示されます。グラフをポイントすると、実際のデータポイントが表示されます。</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-viewer-trends.png" /></figure> <aside class="bcls-aside bcls-aside--information">注:Marketa Munchkin 接続を使用する場合、視聴者の傾向グラフには不明な視聴者のデータのみが表示されます。Munchkin 接続を使用する場合、ユーザーの詳細は収集されません。より詳細なユーザー情報については、Marketa REST 接続を使用する必要があります。詳細については、を参照してください。<a href="/campaign/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html"> REST API を使用して Video Cloud を Marketo と統合する</a>.</aside>
+      </div>  </section><section class="bcls-section">
+      <h2 id="leads">リードのパフォーマンスの表示</h2>
+      <p>リード情報を表示するには、<strong>リード</strong>タブ。[Leads]タブは、お客様のアカウントにキャンペーンリードフォームが作成されている場合にのみ表示されます。リーディングパフォーマンスセクションは、キャンペーン対応のプレーヤーの内部で再生されたビデオに対して、高いレベルのリーディングパフォーマンスを提供します。を選択することから始めます<strong>期間</strong>チャート用。以下のオプションが利用できます。</p>
       <ul>
-        <li>7 Days</li>
-        <li>30 Days</li>
-        <li>90 Days</li>
+        <li>7日</li>
+        <li>30日間</li>
+        <li>90日</li>
       </ul>
-      <p>The following charts are displayed:</p>
+      <p>以下に基づいたグラフが表示されます。</p>
       <ul>
-        <li><a href="#funnel">Campaign Funnel</a></li>
-        <li><a href="#top">Top Converting Videos</a></li>
-        <li><a href="#leads">Leads Chart</a></li>
+        <li><a href="#funnel">キャンペーン·ファンネル</a></li>
+        <li><a href="#top">動画の変換トップ</a></li>
+        <li><a href="#leads">リードグラフ</a></li>
       </ul>
       <div id="funnel" class="BCL-subsection">
-        <h3>Campaign Funnel</h3>
-        <p>The Campaign Funnel displays metrics for videos in Campaign-enabled players with Campaign lead forms for the selected time period:</p>
+        <h3>キャンペーン·ファンネル</h3>
+        <p>キャンペーン·ファンネルは、選択した期間のキャンペーンリードフォームと共に、キャンペーン対応プレーヤーのビデオの指標を表示します。</p>
         <ul>
-          <li><strong>Video impressions</strong> - The number of videos that were loaded</li>
-          <li><strong>Video views</strong> - The number of times a video started playing, recorded when the stream is started (does not include rewind or replay); it is not a measure of individual viewers</li>
-          <li><strong>Lead form views</strong> - The total number of lead form views</li>
-          <li><strong>Conversions</strong> - The total number of lead forms that were submitted</li>
-        </ul>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-funnel.png" /></figure>
+          <li><strong>動画のインプレッション</strong>- 読み込まれた動画の数</li>
+          <li><strong>動画再生回数</strong>- ストリームの開始時に記録されたビデオの再生開始回数 (巻き戻しやリプレイは含まれません)。個々の視聴者を測定するものではありません</li>
+          <li><strong>リードフォーム ビュー</strong>- リードフォームの総閲覧数</li>
+          <li><strong>コンバージョン</strong>- 送信されたリードフォームの総数</li>
+        </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-funnel.png" /></figure>
       </div>
       <div id="top" class="BCL-subsection">
-        <h3>Top Converting Videos</h3>
-        <p>The Top Converting Videos chart displays the videos with the highest conversion rate. The conversion rate is calculated by dividing the number of submitted lead forms divided by video impressions.</p>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-top-conv.png" /></figure>
+        <h3>動画の変換トップ</h3>
+        <p>コンバージョン率の高い動画チャートには、コンバージョン率が最も高い動画が表示されます。コンバージョン率は、送信されたリードフォームの数を動画のインプレッション数で割って算出されます。</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-top-conv.png" /></figure>
       </div>
       <div id="leads_chart" class="BCL-subsection">
-        <h3>Leads Chart</h3>
-        <p>The Leads Chart displays the number of submitted lead forms by day for the selected time period. Hovering over the graph will display the actual data points.</p>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-leads-chart.png" /></figure>
-      </div>
-    </section>
-    <section class="bcls-section">
-      <h2 id="status">Viewing the Campaign module status</h2>
-      <p>The Campaign Status section displays the current status of the Campaign module.</p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-campaign-status.png" /></figure>
-    </section>
-    <section class="bcls-section">
-      <h2 id="connections">Setting up data connections</h2>
-      <p>The <strong>Data Connections</strong> option is where you configure the Campaign integrations. Campaign can integrate with popular marketing automation platforms ("MAP&nbsp;integration") or the viewing data can be saved locally and then exported or extracted using the Audience API ("non-MAP" integration). The following table outlines the supported integrations.</p>
+        <h3>リードグラフ</h3>
+        <p>引合チャートには、選択した期間における発行済引合フォームの数が日別に表示されます。グラフをポイントすると、実際のデータポイントが表示されます。</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-leads-chart.png" /></figure>
+      </div>  </section><section class="bcls-section">
+      <h2 id="status">キャンペーンモジュールステータスの表示</h2>
+      <p>[CampaignStatus]セクションには、Campaignモジュールの現在のステータスが表示されます。</p>   <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-campaign-status.png" /></figure></section><section class="bcls-section">
+      <h2 id="connections">データ接続の設定</h2>
+      <p>の<strong>データ接続</strong>オプションは、Campaign 統合を構成する場所です。キャンペーンは、一般的なマーケティング自動化プラットフォーム（MAP統合）と統合するか、視聴データをローカルに保存してから、AudienceAPI（非MAP統合）を使用してエクスポートまたは抽出することができます。次の表に、サポートされている統合の概要を示します。</p>
       <table class="bcls-table">
         <thead class="bcls-table__head">
           <tr>
-            <th width="300">MAP Integrations</th>
-            <th width="300">Non-MAP Integrations</th>
+            <th width="300">MAP 統合</th>
+            <th width="300">マップ以外の統合</th>
           </tr>
         </thead>
         <tbody class="bcls-table__body">
           <tr>
             <td><ul>
-                <li><a href="/campaign/integrations/eloqua/integrating-video-cloud-oracle-eloqua.html">Oracle Eloqua</a></li>
-                <li><a href="/campaign/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">Marketo (REST APIs)</a></li>
-                <li><a href="/campaign/integrations/marketo/integrating-video-cloud-marketo-using-munchkin.html">Marketo (Munchkin)</a></li>
-                <li><a href="/campaign/integrations/salesforce/integrating-video-cloud-salesforce.html">Salesforce</a></li>
-                <li><a href="/campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">HubSpot (REST APIs)</a></li>
-                <li><a href="/campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-client-side-apis.html">HubSpot (Client-Side APIs)</a></li>
+                <li><a href="/campaign/integrations/eloqua/integrating-video-cloud-oracle-eloqua.html">オラクル・エロクア</a></li>
+                <li><a href="/campaign/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html">マルケト (REST API) </a></li>
+                <li><a href="/campaign/integrations/marketo/integrating-video-cloud-marketo-using-munchkin.html">マルケト (Munchkin) </a></li>
+                <li><a href="/campaign/integrations/salesforce/integrating-video-cloud-salesforce.html">セールスフォース</a></li>
+                <li><a href="/campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">ハブスポット (REST API) </a></li>
+                <li><a href="/campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-client-side-apis.html">HubSpot (クライアントサイド API) </a></li>
               </ul></td>
             <td><ul>
-                <li><a href="/campaign/integrations/non-map/creating-custom-integrations-campaign-module.html">Custom integrations</a></li>
-                <li><a href="/campaign/integrations/non-map/integrating-campaign-single-sign.html">Single sign-on</a></li>
-                <li><a href="/campaign/integrations/non-map/using-campaign-module-track-viewers.html">Campaign Tracking</a></li>
+                <li><a href="/campaign/integrations/non-map/creating-custom-integrations-campaign-module.html">カスタム統合</a></li>
+                <li><a href="/campaign/integrations/non-map/integrating-campaign-single-sign.html">シングルサインオン</a></li>
+                <li><a href="/campaign/integrations/non-map/using-campaign-module-track-viewers.html">キャンペーン追跡</a></li>
               </ul></td>
           </tr>
         </tbody>
       </table>
-      <p>When publishing Campaign-enabled players, use the Advanced Embed (in-page) publishing code. The Standard Embed (iframe) publishing code will not work as the Campaign plugin will be running inside of an iframe and therefore will be unable to access any parent page URL parameters and may not get the correct cookies.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: The number of connections that can be configured is based upon your Video Cloud subscription.</aside>
-    </section>
-    <section class="bcls-section">
-      <h2 id="players">Creating Campaign players</h2>
-      <p>The <strong>Campaign Players</strong> option allows you to create Campaign-enabled Brightcove Players. Video engagement data will only be recorded when video content is viewed inside of a Campaign-enabled video player. For information on creating Campaign-enabled players, see <a href="/campaign/general/creating-campaign-enabled-player.html">Creating a Campaign-enabled Player</a>.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="leadforms">Creating and managing lead forms</h2>
-      <p>The <strong>Lead Forms</strong> option allows you to create lead forms for data capture. Once a lead form is created, it can be associated with a Campaign-enabled player. For information on creating lead forms, see <a href="/campaign/general/creating-campaign-lead-form.html">Creating a Campaign&nbsp;Lead Form</a>. It is also possible to create and use lead forms that are created inside of a third-party marketing automation platform.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="email">Publishing a video to email</h2>
-      <p>The <strong>Publish to Email</strong> option allows you to select a player, video and then generate the HTML embed code to email the video. For information, see <a href="/campaign/general/publishing-video-email-using-campaign-module.html">Publishing a Video to Email using the Campaign Module</a>.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: The Media module also provides the ability to publish a video to email. For information, see <a href="/publish/publishing-video-email.html">Publishing a Video to Email</a>.</aside>
-    </section>
-    <section class="bcls-section">
-      <h2 id="events">Viewing player events</h2>
-      <p>The <strong>All Recent Activity</strong> option allows you to view the player view events that were recorded for the past 24 hours. For information, see <a href="/campaign/general/viewing-player-events-campaign-module.html">Viewing Player Events in the Campaign Module</a>.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="videoactivity">Viewing video activity</h2>
-      <p>The <strong>Video (non-MAP)</strong> option allows you to view the viewing activity for a video. For information, see <a href="/campaign/general/viewing-video-activity.html">Viewing Video Activity</a>.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="profiles">Viewing viewer profiles</h2>
-      <p>The <strong>Viewer Profile (non-MAP)</strong> option allows you to view the player view events by viewer. This option is enabled when using SSO or custom integrations, or Campaign Tracking. For information, see <a href="/campaign/general/viewing-viewer-profile-information.html">Viewing Viewer Profile Information</a>.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="jobs">Viewing synchronization activity</h2>
-      <p>The <strong>Synchronization Activity</strong> option displays the last 10 jobs that were synchronized from Campaign to a marketing automation platform. Synchronization runs on an hourly basis. Select a connection and then click the <strong>Test Sync</strong> button to run a synchronization. This is helpful when testing new integrations to avoid having to wait to see if event data is being sent to your marketing automation platform. Test Sync can be executed once every 5 minutes up to 10 times per hour.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: When using custom integrations, no synchronization jobs are created. Synchronization jobs are created only when using integrations with a marketing automation platform.</aside>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-jobs.png" /></figure>
-    </section>
-    <section class="bcls-section">
-      <h2 id="settings">Configuring Campaign settings</h2>
-      <p>The <strong>Settings</strong> option allows you to configure some default settings for the account. For information, see <a href="/campaign/general/configuring-campaign-settings.html">Configuring Campaign Settings</a>.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="export">Exporting Campaign data</h2>
-      <p>The <strong>Export Campaign Data</strong> option is used to export view event and lead form data. This option will only appear for account administrators. For information on exporting Campaign data, see <a href="/campaign/admin/exporting-campaign-data-campaign-module.html">Exporting Campaign Data from the Campaign Module</a>.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="gallery_leads">Exporting Gallery leads</h2>
-      <p>The <strong>Export Gallery Leads</strong> option is used to export lead form data that was captured from Gallery experiences. This option will only appear for account administrators. For information on exporting Gallery lead data, see <a href="https://gallery.support.brightcove.com/experiences/portal/exporting-gallery-lead-data.html">Exporting Gallery Lead Data</a>.</p>
-    </section>
-    <section class="bcls-section">
-      <h2 id="manage">Managing viewer data</h2>
-      <p>The <strong>Manage Viewer Data</strong> option allows you to search for a user and then either remove that user or export that user's data. This option will only appear for account administrators. For information on managing viewer data, see <a href="/campaign/admin/managing-viewer-data.html">Managing Viewer Data</a>.</p>
-    </section>
-  </article>
-  
+      <p>キャンペーン対応プレーヤーをパブリッシュする場合は、AdvancedEmbed（ページ内）パブリッシングコードを使用します。標準埋め込み（iframe）パブリッシングコードは、キャンペーンプラグインがiframe内で実行されるため機能しません。したがって、親ページのURLパラメータにアクセスできなくなり、正しいCookieを取得できない場合があります。</p> <aside class="bcls-aside bcls-aside--information">注:設定できる接続数は、Video Cloud サブスクリプションに基づいています。</aside> </section> <section class="bcls-section">
+      <h2 id="players">キャンペーンプレイヤーの作成</h2>
+      <p>の<strong>キャンペーンプレイヤー</strong>オプションを使用すると、キャンペーン対応の Brightcove プレーヤを作成できます。ビデオエンゲージメントデータは、キャンペーン対応ビデオプレーヤー内でビデオコンテンツを表示した場合にのみ記録されます。キャンペーン対応プレーヤーの作成については、次を参照してください。<a href="/campaign/general/creating-campaign-enabled-player.html">キャンペーン対応プレーヤーの作成</a>.</p>  </section><section class="bcls-section">
+      <h2 id="leadforms">リードフォームを作成、管理する</h2>
+      <p>の<strong>リードフォーム</strong>オプションを使用すると、データ キャプチャ用のリード フォームを作成できます。リードフォームが作成されると、キャンペーン対応プレーヤーに関連付けることができます。リードフォームの作成については、次を参照してください。<a href="/campaign/general/creating-campaign-lead-form.html">キャンペーン リード フォームの作成</a>.サードパーティのマーケティング自動化プラットフォーム内で作成されたリードフォームを作成し、使用することもできます。</p>  </section><section class="bcls-section">
+      <h2 id="email">動画をメールに公開する</h2>
+      <p>の<strong>電子メールに公開</strong>オプションを使用すると、プレーヤ、ビデオを選択し、HTML 埋め込みコードを生成してビデオを電子メールで送信できます。詳細については、を参照してください。<a href="/campaign/general/publishing-video-email-using-campaign-module.html">キャンペーン モジュールを使用してビデオをメールに公開する</a>.</p> <aside class="bcls-aside bcls-aside--information">注:Media モジュールには、ビデオを電子メールで公開する機能もあります。詳細については、を参照してください。<a href="/publish/publishing-video-email.html">ビデオを電子メールに公開する</a>.</aside> </section> <section class="bcls-section">
+      <h2 id="events">プレーヤーイベントを表示する</h2>
+      <p>の<strong>最近のすべてのアクティビティ</strong>オプションを使用すると、過去 24 時間に記録されたプレーヤー ビュー イベントを表示できます。詳細については、を参照してください。<a href="/campaign/general/viewing-player-events-campaign-module.html">キャンペーン モジュールでのプレイヤー イベントの表示</a>.</p>  </section><section class="bcls-section">
+      <h2 id="videoactivity">ビデオアクティビティの表示</h2>
+      <p>の<strong>ビデオ (非 MAP)</strong>オプションを使用すると、ビデオの視聴アクティビティを表示できます。詳細については、を参照してください。<a href="/campaign/general/viewing-video-activity.html">ビデオ アクティビティの表示</a>.</p>  </section><section class="bcls-section">
+      <h2 id="profiles">ビューアプロファイルの表示</h2>
+      <p>の<strong>閲覧者プロフィール (MAP 以外)</strong>オプションを使用すると、ビューアごとにプレーヤー ビュー イベントを表示できます。このオプションは、SSOまたはカスタム連動、またはキャンペーントラッキングを使用する場合にイネーブルになります。詳細については、を参照してください。<a href="/campaign/general/viewing-viewer-profile-information.html">視聴者のプロフィール情報を表示する</a>.</p>  </section><section class="bcls-section">
+      <h2 id="jobs">同期アクティビティの表示</h2>
+      <p>の<strong>同期活動</strong>オプションは、Campaign からマーケティング オートメーション プラットフォームに同期された最新の 10 個のジョブを表示します。同期は 1 時間単位で実行されます。接続を選択し、<strong>テスト同期</strong>ボタンをクリックして同期を実行します。これは、新しい統合をテストし、イベントデータがマーケティングオートメーションプラットフォームに送信されるかどうかを待たずに済むようにする場合に役立ちます。テスト同期は、5 分に 1 回、1 時間に 10 回まで実行できます。</p> <aside class="bcls-aside bcls-aside--information">注:カスタム統合を使用する場合、同期ジョブは作成されません。同期ジョブは、マーケティング自動化プラットフォームとの統合を使用する場合にのみ作成されます。</aside> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/getting-started/node15634-jobs.png" /></figure> </section> <section class="bcls-section">
+      <h2 id="settings">キャンペーン設定の構成</h2>
+      <p>の<strong>設定</strong>オプションを使用すると、アカウントのデフォルト設定を構成できます。詳細については、を参照してください。<a href="/campaign/general/configuring-campaign-settings.html">キャンペーン設定の構成</a>.</p>  </section><section class="bcls-section">
+      <h2 id="export">キャンペーンデータのエクスポート</h2>
+      <p>の<strong>キャンペーン データのエクスポート</strong>オプションは、ビュー イベントとリードフォーム データをエクスポートするために使用されます。このオプションは、アカウント管理者に対してのみ表示されます。キャンペーン データのエクスポートについては、次を参照してください。<a href="/campaign/admin/exporting-campaign-data-campaign-module.html">キャンペーン モジュールからのキャンペーン データのエクスポート</a>.</p>  </section><section class="bcls-section">
+      <h2 id="gallery_leads">ギャラリーリードのエクスポート</h2>
+      <p>の<strong>ギャラリー リードのエクスポート</strong>オプションは、ギャラリー エクスペリエンスからキャプチャされたリード フォーム データをエクスポートするために使用されます。このオプションは、アカウント管理者に対してのみ表示されます。ギャラリー リード データのエクスポートについては、次を参照してください。<a href="https://gallery.support.brightcove.com/experiences/portal/exporting-gallery-lead-data.html">ギャラリー リード データのエクスポート</a>.</p>  </section><section class="bcls-section">
+      <h2 id="manage">ビューアデータの管理</h2>
+      <p>の<strong>ビューア データの管理</strong>オプションを使用すると、ユーザーを検索してから、そのユーザーを削除するか、そのユーザーのデータをエクスポートできます。このオプションは、アカウント管理者に対してのみ表示されます。ビューア データの管理については、 を参照してください。<a href="/campaign/admin/managing-viewer-data.html">ビューア データの管理</a>.</p>   </section></article>

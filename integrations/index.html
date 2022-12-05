@@ -1,18 +1,9 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section" id="page_wrapper">
-    {% for item in site.data.navigation %}
-      {% if item.name == page.parent %}
-      <section class="flex-container">
-        {% for entry in item.docs %}
-          {% if entry.name == page.title %}
-            {% for subentry in entry.docs %}
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{ page.description }}</summary> <section class="bcls-section" id="page_wrapper"> {% for item in site.data.navigation %} {% if item.name == page.parent %} <section class="flex-container"> {% for entry in item.docs %} {% if entry.name == page.title %} {% for subentry in entry.docs %}
               <div>
-                {% if subentry.docs %}
+                {% ifサブエントリ.param%}
                     <h3><a href="{{ subentry.url }}">{{ subentry.name }}</a></h3>
                     <ul class="landing-page-item">
-                      {% for subdoc in subentry.docs %}
+                      {% サブエントリ内のsubdocの場合。{\f2}%}
                       <li><a href="{{ subdoc.url }}">{{ subdoc.name }}</a></li>
                       {% endfor %}
                     </ul>
@@ -20,11 +11,4 @@
                   <div><a href="{{ subentry.url }}">{{ subentry.name }}</a></div>
                 {% endif %}
               </div>
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-      </section>
-      {% endif %}
-    {% endfor %}
-  </section>
-</article>
+            {% endfor %} {% endif %} {% endfor %}</section> {% endif %} {% endfor %} </section> </article> 

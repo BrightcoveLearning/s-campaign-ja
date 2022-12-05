@@ -1,20 +1,15 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <h2 id="faq">Frequently asked questions</h2>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="faq">よく寄せられる質問</h2>
     <dl>
-      <dt class="bcls-question">Does the bcMapPlugin work when a lead form attached to a player, but no data connection is added?</dt>
-      <dd>No. The plugin expects a data connection to be added to the player. If a lead form is added to the player without a data connection, then the plugin will detect an incomplete setup and exit out of its initialization before the lead form has a chance to display.</dd>
-      <dt class="bcls-question">Does bcMapPlugin work when a lead form is not attached to a player?</dt>
-      <dd>Yes, the plugin will initialize when a data connection has been added to a player.
-        The following data connections will require that T<strong>rack Data for Unknown Viewers</strong> be enabled before the player can send its event tracking beacons. Otherwise, there will be no lead form to detect viewers, everyone will be unknown, and that data will not be tracked.
+      <dt class="bcls-question">bcMapPluginは、プレーヤーにリード·フォームが添付されているが、データ接続が追加されていない場合に動作しますか。</dt>
+      <dd>いいえ。プラグインは、データ接続がプレーヤーに追加されることを想定しています。データ接続なしでリードフォームをプレーヤーに追加すると、プラグインは不完全なセットアップを検出し、リードフォームを表示する前に初期化を終了します。</dd>
+      <dt class="bcls-question">bcMapPluginは、リードフォームがプレーヤーに添付されていない場合に動作しますか。</dt>
+      <dd>はい、データ接続がプレーヤーに追加されると、プラグインが初期化されます。次のデータ接続では、T が必要になります。<strong>不明な閲覧者のラック データ</strong>プレーヤーがイベント追跡ビーコンを送信する前に有効にします。そうしないと、視聴者を検出するためのリードフォームがなく、すべての人が不明になり、データが追跡されません。
         <ul>
-          <li>Salesforce / Pardot</li>
+          <li>営業担当者/Pardot</li>
           <li>Eloqua</li>
-          <li>Campaign</li>
+          <li>キャンペーン</li>
         </ul>
       </dd>
-    </dl>
-  </section>
-</article>
+    </dl>   </section></article>

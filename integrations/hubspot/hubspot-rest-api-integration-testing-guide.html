@@ -1,85 +1,63 @@
 <article class="bcls-article">
-    <h1>{{ page.title }}</h1>
-    <summary>{{ page.description }}</summary>
-    <section class="bcls-section">
-      <p>When setting up a new HubSpot integration using the REST APIs, it can be challenging to test and confirm that video viewing data is indeed being delivered to HubSpot. In this topic, you will learn how to systematically test and confirm that the integration works and that viewing data and leads are being sent to HubSpot.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: This topic is for verifying HubSpot connections made using the REST APIs.</aside>
-      <aside class="bcls-aside bcls-aside--information">Note: For information on how to configure the Campaign module for use with HubSpot, see&nbsp;<a href="/campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">Integrating Video Cloud with HubSpot Using the REST APIs</a>.</aside>
-    </section>
-    <section class="bcls-section">
-      <h2 id="start">Before you get started</h2>
-      <p>Before validating the integration it is assumed you have:</p>
+    <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section">
+      <p>REST API を使用して新しい HubSpot 統合を設定する場合、動画視聴データが実際に HubSpot に配信されているかどうかをテストして確認することは困難です。このトピックでは、統合が機能していること、および表示データとリードが HubSpot に送信されていることを体系的にテストして確認する方法を学びます。</p> <aside class="bcls-aside bcls-aside--information">注:このトピックは、REST API を使用して作成された HubSpot 接続を確認するためのものです。</aside> <aside class="bcls-aside bcls-aside--information">注:HubSpot で使用するためにキャンペーン モジュールを構成する方法については、次を参照してください。<a href="/campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html"> REST API を使用して Video Cloud と HubSpot を統合する</a>.</aside> </section> <section class="bcls-section">
+      <h2 id="start">始める前に</h2>
+      <p>統合を検証する前に、次のことが前提になります。</p>
       <ul>
-        <li>Successfully completed the <a href="/campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">Brightcove Campaign integration with HubSpot</a></li>
-        <li>Created at least one <a href="/campaign/general/creating-campaign-enabled-player.html">Campaign-enabled player</a> and configured it to use the HubSpot connection</li>
-      </ul>
-    </section>
-    <section class="bcls-section">
-      <h2 id="lead_form">Configuring a test lead form and publishing a video</h2>
-      <p>For testing purposes, you will need to create and configure a custom lead form in Campaign. This is a HubSpot form whose embed code you have pasted into Campaign. Even if you will not be using lead forms in your production environment, this lead form is used to be sure that you are known in your database and on the page. To create a HubSpot form and configure Campaign to use it, follow these steps.</p>
+        <li>正常に完了しました<a href="/campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html">ブライトコーブ キャンペーンと HubSpot の統合</a></li>
+        <li>少なくとも 1 つ作成されました<a href="/campaign/general/creating-campaign-enabled-player.html">キャンペーン対応プレイヤー</a>HubSpot接続を使用するように構成しました</li>
+      </ul>  </section><section class="bcls-section">
+      <h2 id="lead_form">テストリードフォームの設定とビデオの公開</h2>
+      <p>テストのために、キャンペーンでカスタムリードフォームを作成および設定する必要があります。これは、キャンペーンに埋め込みコードを貼り付けたHubSpotフォームです。実稼働環境でリードフォームを使用しない場合でも、このリードフォームを使用して、データベースおよびページで既知であることが確認されます。ハブスポットフォームを作成し、それを使用するキャンペーンを設定するには、次の手順を実行します。</p>
       <ol class="bcls-tasklist-restart">
-        <li>Login to your HubSpot account.</li>
-        <li>Create and style a HubSpot form. For information on creating a HubSpot form, see <a href="/campaign/integrations/hubspot/creating-custom-lead-forms-hubspot.html">Creating Custom Lead Forms for HubSpot</a>.</li>
-        <li>Click <strong>Share</strong> at the top of the page.</li>
-        <li>Copy the form embed code to the clipboard.</li>
-        <li>Return to the Campaign module.</li>
-        <li>Create a new lead form using the HubSpot form embed code.</li>
-        <li>Set your custom form to display the form at the 5 second mark. This way you will know exactly when it should appear.</li>
-        <li>Check the box to <strong>Always show the lead form even if the lead is already known</strong>. This will ensure the form continues to display after filling it out during testing.</li>
-        <li><strong>Save</strong> the form.</li>
-        <li>Configure the Brightcove Player with the HubSpot connection to use the HubSpot lead form that was just created.</li>
-      </ol>
-    </section>
-    <section class="bcls-section">
-      <h2 id="preview_video">Generating a preview link to view the video</h2>
-      <p>To generate a preview link to the video, follow these steps.</p>
+        <li>HubSpot アカウントにログインします。</li>
+        <li>HubSpot フォームを作成し、スタイルを設定します。HubSpot フォームの作成については、以下を参照してください。<a href="/campaign/integrations/hubspot/creating-custom-lead-forms-hubspot.html"> HubSpot のカスタム リード フォームの作成</a>.</li>
+        <li>クリック<strong>シェア</strong>ページの上部にあります。</li>
+        <li>フォームの埋め込みコードをクリップボードにコピーします。</li>
+        <li>キャンペーンモジュールに戻ります。</li>
+        <li>HubSpot フォームの埋め込みコードを使用して、新しいリードフォームを作成します。</li>
+        <li>5 秒のマークにフォームが表示されるようにカスタムフォームを設定します。このようにして、いつ表示されるべきかを正確に知ることができます。</li>
+        <li>チェックボックスをオンにして<strong>リードがすでにわかっている場合でも、常にリード フォームを表示する</strong>.これにより、テスト中に記入した後もフォームが表示され続けます。</li>
+        <li><strong>保存</strong>フォーム。</li>
+        <li>作成したばかりの HubSpot リードフォームを使用するように HubSpot 接続で Brightcove Player を設定します。</li>
+      </ol>  </section><section class="bcls-section">
+      <h2 id="preview_video">ビデオを見るためのプレビューリンクの生成</h2>
+      <p>ビデオへのプレビューリンクを生成するには、次の手順に従います。</p>
       <ol class="bcls-tasklist-restart">
-        <li>Open the <strong>Media</strong> module.</li>
-        <li>Select a video and publish it to a web player. Make sure to select the Campaign-enabled player with the lead form.</li>
-        <li>Click the preview link to open the video in a new browser window. Testing this way eliminates any potential variables that could be introduced by players embedded on a HTML pages.</li>
-        <li>Confirm that the video plays and that the lead form displays at the 5 second mark.</li>
-        <li>Fill out the lead form using unique contact info and email address (i.e. a celebrity name or a name containing the words “bctest”) so that it can be easily found later in HubSpot. This eliminates any browser, player or database level variables. By filling out the form as a new user, we can be sure you are now a known user in HubSpot.</li>
-      </ol>
-    </section>
-    <section class="bcls-section">
-      <h2 id="confirm_data">Confirming that Campaign is successfully capturing the data</h2>
-      <p>Before looking for video viewing data in HubSpot, first confirm that Campaign has indeed captured the video view. Note that viewing data may take up to 3 hours to display in the Campaign UI. To confirm that Campaign is successfully capturing the data, follow these steps.</p>
+        <li>を開きます<strong>メディア</strong>モジュール。</li>
+        <li>ビデオを選択し、Web プレーヤーに公開します。キャンペーン対応プレイヤーを必ずリードフォームから選択してください。</li>
+        <li>プレビューリンクをクリックして、ビデオを新しいブラウザウィンドウで開きます。この方法でテストすると、HTML ページに埋め込まれたプレーヤーによって導入される可能性のある変数がなくなります。</li>
+        <li>ビデオが再生され、リードフォームが 5 秒マークに表示されることを確認します。</li>
+        <li>独自の連絡先情報とEメールアドレス（有名人の名前または-bctestという単語を含む名前）を使用してリードフォームを作成し、後でHubSpotで簡単に見つけることができます。これにより、ブラウザ、プレーヤー、データベースレベルの変数がなくなります。新しいユーザーとしてフォームに入力することで、HubSpot で既知のユーザーであることが確認されます。</li>
+      </ol>  </section><section class="bcls-section">
+      <h2 id="confirm_data">キャンペーンがデータを正常にキャプチャしていることを確認する</h2>
+      <p>HubSpotでビデオを見るデータを探す前に、まずCampaignがビデオを実際にキャプチャしていることを確認してください。キャンペーンUIにデータを表示するには、最大3時間かかる場合があります。キャンペーンがデータを正常にキャプチャしていることを確認するには、次の手順を実行します。</p>
       <ol class="bcls-tasklist-restart">
-        <li>Open the <strong>Campaign</strong> module.</li>
-        <li>Click <strong>All Recent Activity</strong> in the left navigation.</li>
-        <li>Confirm that there is an event with a recent timestamp showing the name of the video that was just watched. The event status should be <strong>unprocessed</strong>. This indicates that Campaign has captured the view but has not yet attempted to sync it to HubSpot.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/integrations/hubspot/node18741-unprocessed.png" /></figure>
+        <li>を開きます<strong>運動</strong>モジュール。</li>
+        <li>クリック<strong>最近のすべてのアクティビティ</strong>左のナビゲーションにあります。</li>
+        <li>視聴したばかりの動画の名前を示す最近のタイムスタンプが付いたイベントがあることを確認します。イベントステータスは<strong>未処理</strong>.これは、キャンペーンがビューをキャプチャしたものの、まだHubSpotと同期しようとしていないことを示します。 <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/integrations/hubspot/node18741-unprocessed.png" /></figure>
         </li>
-        <li>To manually trigger a sync between Campaign and HubSpot, click <strong>Synchronization Activity</strong> in the left navigation.</li>
-        <li>From the <strong>Select Connection</strong> dropdown list, select your HubSpot integration. A <span class="button-blue">Test Sync</span> button should appear.</li>
-        <li>Click <span class="button-blue">Test Sync</span> to trigger a manual sync. Note that you are limited to how often you can trigger a manual sync. By default, Campaign will sync views to HubSpot once an hour.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/integrations/hubspot/node18741-test-sync.png" /></figure>
+        <li>Campaign と HubSpot 間の同期を手動でトリガーするには、<strong>同期活動</strong>左のナビゲーションにあります。</li>
+        <li>から<strong>接続を選択</strong>ドロップダウン リストで、HubSpot 統合を選択します。あ<span class="button-blue">テスト同期</span>ボタンが表示されます。</li>
+        <li>クリック<span class="button-blue">テスト同期</span>手動同期をトリガーします。手動同期をトリガーできる頻度は制限されます。デフォルトでは、キャンペーンは1時間に1回、ビューをHubSpotに同期します。 <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/integrations/hubspot/node18741-test-sync.png" /></figure>
         </li>
-        <li>Click <strong>All Recent Activity</strong> in the left navigation.</li>
-        <li>The status of your view event will be <strong>queued</strong>. It may take 15 minutes or so for the data to actually sync to HubSpot. Once the data does sync, the status will change to one of two statuses:
+        <li>クリック<strong>最近のすべてのアクティビティ</strong>左のナビゲーションにあります。</li>
+        <li>ビュー イベントのステータスは次のようになります。<strong>待ち行列</strong>.データが HubSpot に実際に同期されるには 15 分ほどかかる場合があります。データが同期されると、ステータスは次の 2 つのステータスのいずれかに変わります。
           <ul>
-            <li><strong>synced</strong> - Indicates the user was a known user and data was successfully delivered to their activity log. The data should also be viewable in HubSpot within a few minutes.</li>
-            <li><strong>unknown_contact</strong> - Indicates the user was considered unknown and HubSpot was unable to accept the data. If you get an <strong>unknown_contact</strong> status, check that you published the video using the correct player, have a HubSpot form in place and are testing using the preview link, not embedded in a page.
-              <figure class="bcls-figure"></figure>
+            <li><strong>同期された</strong>- ユーザーが既知のユーザーであり、データがアクティビティ ログに正常に配信されたことを示します。データは、数分以内に HubSpot でも表示できます。</li>
+            <li><strong>不明な連絡先</strong>- ユーザーが不明であると見なされ、HubSpot がデータを受け入れることができなかったことを示します。あなたが得た場合<strong>不明な連絡先</strong>ステータス、適切なプレーヤーを使用してビデオを公開したこと、HubSpot フォームが配置されていること、ページに埋め込まれていないプレビュー リンクを使用してテスト中であることを確認します。 <figure class="bcls-figure"></figure>
             </li>
           </ul>
         </li>
-      </ol>
-    </section>
-    <section class="bcls-section">
-      <h2 id="confirm_marketo">Confirming that the video view data is in HubSpot</h2>
-      <p>Once Campaign has displayed a <strong>synced</strong> status, follow these steps to verify that the data is in HubSpot.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: It make take 5-10 minutes for the HubSpot UI to update with the new data it has received from Campaign.</aside>
+      </ol>  </section><section class="bcls-section">
+      <h2 id="confirm_marketo">動画ビューのデータが HubSpot にあることの確認</h2>
+      <p>キャンペーンが表示されたら<strong>同期された</strong>状態である場合、次の手順に従って、データが HubSpot にあることを確認します。</p> <aside class="bcls-aside bcls-aside--information">注:HubSpotUIがCampaignから受け取った新しいデータで更新するのに5~10分かかります。</aside>
       <ol class="bcls-tasklist-restart">
-        <li>Login to your HubSpot account.</li>
-        <li>In HubSpot navigate to the <strong>Contacts</strong> area and locate the unique name or email address you used when filling out the lead form.</li>
-        <li>Click on the contact to open up the Activity log.</li>
-        <li>Click on the <strong>Filter activity</strong> dropdown (top of the page below the <strong>Activity</strong> menu) and confirm that <strong>Brightcove Video Connect</strong> is checked. This will ensure that video viewing activity is displayed in the activity log.</li>
-        <li>In the activity log, look for a <strong>Brightcove </strong>activity. Expand the details to view the data for the video view event.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/integrations/hubspot/node18741-video-event.png" /></figure>
+        <li>HubSpot アカウントにログインします。</li>
+        <li>HubSpot で、<strong>連絡先</strong>領域を開き、リード フォームに入力したときに使用した一意の名前またはメール アドレスを見つけます。</li>
+        <li>連絡先をクリックして、アクティビティログを開きます。</li>
+        <li>クリックしてください<strong>フィルタ アクティビティ</strong>ドロップダウン (ページの上部、<strong>アクティビティ</strong>メニュー）、それを確認します<strong>ブライトコーブ ビデオ コネクト</strong>がチェックされます。これにより、ビデオ視聴アクティビティがアクティビティログに表示されます。</li>
+        <li>アクティビティ ログで、<strong>ブライトコーブ</strong>アクティビティ。詳細を展開して、ビデオビューイベントのデータを表示します。 <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-campaign-img/integrations/hubspot/node18741-video-event.png" /></figure>
         </li>
       </ol>
-      <p>HubSpot requires data being delivered via their API to be assigned to a known contact. HubSpot will only accept data of known contacts. Data of unknown contacts will not be synced. If you don't use lead forms, there is no way for an unknown user to convert to a known user and thus no data will be synced.</p>
-    </section>
-  </article>
-  
+      <p>HubSpot では、API 経由で配信されるデータを既知の連絡先に割り当てる必要があります。HubSpot は、既知の連絡先のデータのみを受け付けます。不明な連絡先のデータは同期されません。リードフォームを使用しない場合、不明なユーザーが既知のユーザーに変換する方法がないため、データは同期されません。</p>   </section></article>
